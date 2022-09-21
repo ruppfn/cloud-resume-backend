@@ -9,6 +9,9 @@ on:
     branches:
       - develop
 
+env:
+  AWS_REGION: us-east-2
+
 jobs:
   lint:
     name: Deploy Develop
