@@ -44,7 +44,7 @@ jobs:
 
       - name: Build lambdas
         run: make all
-        working-directory: ../
+        working-directory: ./
 
       - name: Apply
         run: terraform apply -auto-approve
