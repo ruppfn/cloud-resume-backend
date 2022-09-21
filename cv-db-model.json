@@ -1,0 +1,49 @@
+{
+  "id": "cv",
+  "name": "",
+  "role": "",
+  "contactInfo": {
+    "location": "",
+    "phone": "",
+    "mail": "",
+    "linkedIn": "",
+    "github": ""
+  },
+  "aboutMe": "",
+  "experience": [
+    {
+      "companyName": "",
+      "fromDate": "",
+      "toDate": "",
+      "techStack": [""],
+      "achievements": [""]
+    }
+  ],
+  "skills": {
+    "programmingLanguages": [
+      {
+        "name": "",
+        "level": ""
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "",
+        "level": ""
+      }
+    ],
+    "databases": [
+      {
+        "name": "",
+        "level": ""
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "name": "",
+      "dateObtained": "",
+      "url": ""
+    }
+  ]
+}
