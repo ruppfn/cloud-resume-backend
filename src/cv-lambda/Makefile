@@ -1,5 +1,5 @@
-BUILD_PATH=../../build
-BINARY_NAME=cv-lambda
+BUILD_PATH=../../build/cv-lambda
+BINARY_NAME=bootstrap
 
 build:
 	GOARCH=arm64 GOOS=linux go build -o ${BUILD_PATH}/${BINARY_NAME}

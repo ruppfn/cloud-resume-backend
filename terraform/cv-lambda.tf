@@ -1,7 +1,7 @@
 data "archive_file" "cv_lambda_zip" {
   type        = "zip"
-  source_file = "${local.build_path}/cv-lambda"
-  output_path = "${local.build_path}/cv-lambda.zip"
+  source_file = "${local.build_path}/cv-lambda/bootstrap"
+  output_path = "${local.build_path}/cv-lambda/bootstrap.zip"
 }
 
 resource "aws_lambda_function" "cv_lambda" {
