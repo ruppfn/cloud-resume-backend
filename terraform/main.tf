@@ -6,7 +6,7 @@ locals {
 
 terraform {
   backend "s3" {
-    key = "cloud-resume/backend/terraform.tfstate"
+    key    = "cloud-resume/backend/terraform.tfstate"
     region = "us-east-2"
   }
 
