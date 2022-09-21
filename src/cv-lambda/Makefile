@@ -9,4 +9,5 @@ run:
 
 clean:
 	go clean
-	rm ${BUILD_PATH}/${BINARY_NAME}
+	rm -f ${BUILD_PATH}/${BINARY_NAME}
+	rm -f ${BUILD_PATH}/${BINARY_NAME}.zip
