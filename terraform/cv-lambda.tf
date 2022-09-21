@@ -1,6 +1,6 @@
 data "archive_file" "cv_lambda_zip" {
   type        = "zip"
-  source_file  = "${local.build_path}/cv-lambda"
+  source_file = "${local.build_path}/cv-lambda"
   output_path = "${local.build_path}/cv-lambda.zip"
 }
 
