@@ -12,6 +12,9 @@ on:
 env:
   AWS_REGION: us-east-2
 
+permissions:
+  id-token: write
+
 jobs:
   lint:
     name: Deploy Develop
