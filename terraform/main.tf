@@ -1,3 +1,9 @@
+locals {
+  region     = "us-east-2"
+  account_id = data.aws_caller_identity.current.account_id
+  build_path = "../build"
+}
+
 terraform {
   backend "s3" {
     bucket = "ruppfn-terraform"
@@ -12,6 +18,8 @@ terraform {
   }
 }
 
+data "aws_caller_identity" "current" {}
+
 provider "aws" {
-  region = "us-east-2"
+  region = local.region
 }
