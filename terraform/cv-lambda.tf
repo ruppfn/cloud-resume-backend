@@ -4,7 +4,7 @@ data "archive_file" "cv_lambda_zip" {
   output_path = "${local.build_path}/cv-lambda.zip"
 }
 
-resource "aws_lambda_function" "func" {
+resource "aws_lambda_function" "cv_lambda" {
   filename         = data.archive_file.cv_lambda_zip.output_path
   function_name    = "cv-lambda"
   role             = aws_iam_role.lambda_role.arn
