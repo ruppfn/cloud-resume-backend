@@ -8,7 +8,7 @@ resource "aws_lambda_function" "func" {
   filename         = data.archive_file.cv_lambda_zip.output_path
   function_name    = "cv-lambda"
   role             = aws_iam_role.lambda_role.arn
-  handler          = "main"
+  handler          = "cv-lambda"
   source_code_hash = filebase64sha256(data.archive_file.cv_lambda_zip.output_path)
   runtime          = "go1.x"
   memory_size      = 128
