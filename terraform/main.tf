@@ -6,7 +6,7 @@ locals {
 
 terraform {
   backend "s3" {
-    bucket = "ruppfn-terraform"
+    key = "cloud-resume/backend/terraform.tfstate"
     region = "us-east-2"
   }
 

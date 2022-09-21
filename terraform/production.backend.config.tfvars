@@ -1,1 +1,1 @@
-key = "production/terraform.tfstate"
+bucket = "production-ruppfn-terraform"
