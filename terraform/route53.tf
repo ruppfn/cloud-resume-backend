@@ -7,6 +7,11 @@ resource "aws_acm_certificate" "cert" {
   }
 }
 
+resource "aws_acm_certificate_validation" "validation" {
+  certificate_arn         = aws_acm_certificate.cert.arn
+  validation_record_fqdns = [for record in aws_route53_record.record : record.fqdn]
+}
+
 resource "aws_route53_record" "record" {
   zone_id = var.zone_id
   name    = local.domain_name
@@ -26,6 +31,8 @@ resource "aws_apigatewayv2_domain_name" "domain_name" {
     endpoint_type   = "REGIONAL"
     security_policy = "TLS_1_2"
   }
+
+  depends_on = [aws_acm_certificate_validation.validation]
 }
 
 resource "aws_apigatewayv2_api_mapping" "mapping" {
