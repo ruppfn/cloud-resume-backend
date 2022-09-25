@@ -1,7 +1,7 @@
 resource "aws_apigatewayv2_api" "http-api" {
-  name          = "${var.environment}-cloud-resume"
-  description   = "API Gateway HTTP for cloud-resume."
-  protocol_type = "HTTP"
+  name                         = "${var.environment}-cloud-resume"
+  description                  = "API Gateway HTTP for cloud-resume."
+  protocol_type                = "HTTP"
   disable_execute_api_endpoint = true
 }
 
