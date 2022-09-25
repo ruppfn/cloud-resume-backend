@@ -4,7 +4,10 @@ data "aws_iam_policy_document" "bucket_policy" {
   statement {
     effect  = "Allow"
     actions = ["s3:GetObject"]
-
+    principals {
+      identifiers = ["*"]
+      type        = "*"
+    }
     resources = [
       "arn:aws:s3:::${aws_s3_bucket.page_bucket.bucket}/*"
     ]
