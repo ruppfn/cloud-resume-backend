@@ -11,6 +11,7 @@ on:
 
 env:
   AWS_REGION: us-east-2
+  TF_VAR_zone_id: ${{ secrets.DEVELOP_ROUTE_53_ZONE_ID }}
 
 permissions:
   id-token: write
