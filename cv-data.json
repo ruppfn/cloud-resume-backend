@@ -34,26 +34,227 @@
     "L": [
       {
         "M": {
+          "id": {
+            "N": "1"
+          },
           "companyName": {
-            "S": ""
+            "S": "Soluciones Tecnológicas de la Información"
+          },
+          "role": {
+            "S": "CRM Developer"
           },
           "fromDate": {
-            "S": ""
+            "S": "December 2019"
           },
           "toDate": {
-            "S": ""
+            "S": "September 2020"
           },
           "techStack": {
             "L": [
               {
-                "S": ""
+                "S": ".NET"
+              },
+              {
+                "S": "SQL Server"
+              },
+              {
+                "S": "JavaScript"
+              },
+              {
+                "S": "jQuery"
+              },
+              {
+                "S": "Bootstrap"
               }
             ]
           },
           "achievements": {
             "L": [
               {
-                "S": ""
+                "S": "Optimized reports generation by 10x optimizing database queries."
+              },
+              {
+                "S": "Improved the UX in the app making client-side validations with JavaScript."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "M": {
+          "id": {
+            "N": "2"
+          },
+          "companyName": {
+            "S": "quares IT Solutions"
+          },
+          "role": {
+            "S": "Backend Developer"
+          },
+          "fromDate": {
+            "S": "September 2020"
+          },
+          "toDate": {
+            "S": "August 2021"
+          },
+          "techStack": {
+            "L": [
+              {
+                "S": "Java 8"
+              },
+              {
+                "S": "Python"
+              },
+              {
+                "S": "Microservices"
+              },
+              {
+                "S": "Node"
+              },
+              {
+                "S": "Oracle"
+              },
+              {
+                "S": "SQL Server"
+              },
+              {
+                "S": "Docker"
+              }
+            ]
+          },
+          "achievements": {
+            "L": [
+              {
+                "S": "Helped the QA Team writing E2E Tests in Selenium."
+              },
+              {
+                "S": "Reduced the development times by 35% by refactoring old modules."
+              },
+              {
+                "S": "Reduced response time from an endpoint from 8-13 seconds to less than 1 second by redesigning the integration with other services, using more suitable data structures, and optimizing database queries."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "M": {
+          "id": {
+            "N": "3"
+          },
+          "companyName": {
+            "S": "Avalith"
+          },
+          "role": {
+            "S": "AWS Developer"
+          },
+          "fromDate": {
+            "S": "August 2021"
+          },
+          "toDate": {
+            "S": "April 2022"
+          },
+          "techStack": {
+            "L": [
+              {
+                "S": "Java 8"
+              },
+              {
+                "S": "Terraform"
+              },
+              {
+                "S": "Terragrunt"
+              },
+              {
+                "S": "AWS"
+              },
+              {
+                "S": "Lambda"
+              },
+              {
+                "S": "API Gateway"
+              },
+              {
+                "S": "DynamoDB"
+              },
+              {
+                "S": "CloudWatch"
+              },
+              {
+                "S": "SQS"
+              },
+              {
+                "S": "SNS"
+              },
+              {
+                "S": "RDS"
+              },
+              {
+                "S": "Secrets Manager"
+              },
+              {
+                "S": "S3"
+              }
+            ]
+          },
+          "achievements": {
+            "L": [
+              {
+                "S": "Designed and developed entire application modules following the Well-Architected Framework."
+              },
+              {
+                "S": "Reduced the development times by creating Terraform and Terragrunt Modules, and IntelliJ templates."
+              },
+              {
+                "S": "Redesigned DynamoDB tables to be easily queryable by using Secondary Indexes."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "M": {
+          "id": {
+            "N": "4"
+          },
+          "companyName": {
+            "S": "Rather Labs"
+          },
+          "role": {
+            "S": "Backend Developer"
+          },
+          "fromDate": {
+            "S": "April 2022"
+          },
+          "toDate": {
+            "S": "Current"
+          },
+          "techStack": {
+            "L": [
+              {
+                "S": "NodeJS"
+              },
+              {
+                "S": "TypeScript"
+              },
+              {
+                "S": "SQL Server"
+              },
+              {
+                "S": "Routing Controllers"
+              },
+              {
+                "S": "DocumentDB"
+              },
+              {
+                "S": "AWS"
+              }
+            ]
+          },
+          "achievements": {
+            "L": [
+              {
+                "S": "Helped the Performance Team optimize the database indexes and queries"
               }
             ]
           }
@@ -200,6 +401,30 @@
               },
               "level": {
                 "S": "Intermediate"
+              }
+            }
+          }
+        ]
+      },
+      "languages": {
+        "L": [
+          {
+            "M": {
+              "name": {
+                "S": "English"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Spanish"
+              },
+              "level": {
+                "S": "Native"
               }
             }
           }
