@@ -15,5 +15,5 @@ resource "aws_dynamodb_table" "dynamo_table" {
 resource "aws_dynamodb_table_item" "dynamo_cv_item" {
   table_name = aws_dynamodb_table.dynamo_table.name
   hash_key   = aws_dynamodb_table.dynamo_table.hash_key
-  item       = file("../cv-db-model.json")
+  item       = file("../cv-data.json")
 }
