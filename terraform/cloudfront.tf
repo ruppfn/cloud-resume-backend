@@ -27,7 +27,7 @@ resource "aws_cloudfront_distribution" "page_distribution" {
   }
 
   origin {
-    domain_name = aws_s3_bucket.page_bucket.bucket_regional_domain_name
+    domain_name = aws_s3_bucket_website_configuration.page_configuration.website_endpoint
     origin_id   = "S3-${aws_s3_bucket.page_bucket.bucket}"
 
     custom_origin_config {
