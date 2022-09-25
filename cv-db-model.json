@@ -1,49 +1,127 @@
 {
-  "id": "cv",
-  "name": "",
-  "role": "",
-  "contactInfo": {
-    "location": "",
-    "phone": "",
-    "mail": "",
-    "linkedIn": "",
-    "github": ""
+  "id": {
+    "S": "cv"
   },
-  "aboutMe": "",
-  "experience": [
-    {
-      "companyName": "",
-      "fromDate": "",
-      "toDate": "",
-      "techStack": [""],
-      "achievements": [""]
+  "name": {
+    "S": ""
+  },
+  "role": {
+    "S": ""
+  },
+  "contactInfo": {
+    "M": {
+      "location": {
+        "S": ""
+      },
+      "phone": {
+        "S": ""
+      },
+      "mail": {
+        "S": ""
+      },
+      "linkedIn": {
+        "S": ""
+      },
+      "github": {
+        "S": ""
+      }
     }
-  ],
-  "skills": {
-    "programmingLanguages": [
+  },
+  "aboutMe": {
+    "S": ""
+  },
+  "experience": {
+    "L": [
       {
-        "name": "",
-        "level": ""
-      }
-    ],
-    "frameworks": [
-      {
-        "name": "",
-        "level": ""
-      }
-    ],
-    "databases": [
-      {
-        "name": "",
-        "level": ""
+        "M": {
+          "companyName": {
+            "S": ""
+          },
+          "fromDate": {
+            "S": ""
+          },
+          "toDate": {
+            "S": ""
+          },
+          "techStack": {
+            "L": [
+              {
+                "S": ""
+              }
+            ]
+          },
+          "achievements": {
+            "L": [
+              {
+                "S": ""
+              }
+            ]
+          }
+        }
       }
     ]
   },
-  "certifications": [
-    {
-      "name": "",
-      "dateObtained": "",
-      "url": ""
+  "skills": {
+    "M": {
+      "programmingLanguages": {
+        "L": [
+          {
+            "M": {
+              "name": {
+                "S": ""
+              },
+              "level": {
+                "S": ""
+              }
+            }
+          }
+        ]
+      },
+      "frameworks": {
+        "L": [
+          {
+            "M": {
+              "name": {
+                "S": ""
+              },
+              "level": {
+                "S": ""
+              }
+            }
+          }
+        ]
+      },
+      "databases": {
+        "L": [
+          {
+            "M": {
+              "name": {
+                "S": ""
+              },
+              "level": {
+                "S": ""
+              }
+            }
+          }
+        ]
+      }
     }
-  ]
+  },
+  "certifications": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": ""
+          },
+          "dateObtained": {
+            "S": ""
+          },
+          "url": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  }
 }
