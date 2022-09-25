@@ -10,9 +10,9 @@ resource "aws_apigatewayv2_integration" "cv_lambda_integration" {
   integration_type = "AWS_PROXY"
 }
 
-resource "aws_apigatewayv2_route" "route" {
+resource "aws_apigatewayv2_route" "get" {
   api_id    = aws_apigatewayv2_api.http-api.id
-  route_key = "$default"
+  route_key = "GET /"
   target    = "integrations/${aws_apigatewayv2_integration.cv_lambda_integration.id}"
 }
 
