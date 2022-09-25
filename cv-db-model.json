@@ -3,32 +3,32 @@
     "S": "cv"
   },
   "name": {
-    "S": ""
+    "S": "Franco Nahuel Rupp"
   },
   "role": {
-    "S": ""
+    "S": "Backend Developer"
   },
   "contactInfo": {
     "M": {
       "location": {
-        "S": ""
+        "S": "Buenos Aires, Argentina (GMT -3)"
       },
       "phone": {
-        "S": ""
+        "S": "(+54) 9 1128587206"
       },
       "mail": {
-        "S": ""
+        "S": "ruppfn@gmail.com"
       },
       "linkedIn": {
-        "S": ""
+        "S": "https://www.linkedin.com/in/ruppfn/"
       },
       "github": {
-        "S": ""
+        "S": "https://github.com/ruppfn"
       }
     }
   },
   "aboutMe": {
-    "S": ""
+    "S": "Self-taught Backend Developer with +2 years of experience designing, developing and maintaining web services (SOAP & REST) using mostly Java, Python, and Node. I also have strong knowledge of DevOps technologies such as AWS, Terraform, Terragrunt, and CI/CD Pipelines in GitHub Actions. I love learning new technologies, patterns, and everything that can make me a better professional."
   },
   "experience": {
     "L": [
@@ -68,10 +68,40 @@
           {
             "M": {
               "name": {
-                "S": ""
+                "S": "Java"
               },
               "level": {
-                "S": ""
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Node"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Python"
+              },
+              "level": {
+                "S": "Intermediate"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Golang"
+              },
+              "level": {
+                "S": "Basic"
               }
             }
           }
@@ -82,10 +112,40 @@
           {
             "M": {
               "name": {
-                "S": ""
+                "S": "Spring Boot"
               },
               "level": {
-                "S": ""
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Express"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Flask"
+              },
+              "level": {
+                "S": "Intermediate"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Serverless Framework"
+              },
+              "level": {
+                "S": "Basic"
               }
             }
           }
@@ -96,10 +156,50 @@
           {
             "M": {
               "name": {
-                "S": ""
+                "S": "SQL Server"
               },
               "level": {
-                "S": ""
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "Oracle"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "DynamoDB"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "MySQL"
+              },
+              "level": {
+                "S": "Intermediate"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "MongoDB"
+              },
+              "level": {
+                "S": "Intermediate"
               }
             }
           }
@@ -112,13 +212,52 @@
       {
         "M": {
           "name": {
-            "S": ""
+            "S": "AWS Certified Cloud Practitioner"
           },
           "dateObtained": {
-            "S": ""
+            "S": "January 2022"
           },
           "url": {
-            "S": ""
+            "S": "https://www.credly.com/badges/a2ba977d-d51c-4600-9745-f542f2a35a77"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Solutions Architect Associate"
+          },
+          "dateObtained": {
+            "S": "February 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/ea479eb2-5a38-44d6-8604-0fb91f1ca00d"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Developer Associate"
+          },
+          "dateObtained": {
+            "S": "February 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/2c348a0a-3c09-4a18-86c8-1ec103a15307"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified SysOps Administrator Associate"
+          },
+          "dateObtained": {
+            "S": "August 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/9fb23f02-2b44-41a6-903b-1912f71167eb"
           }
         }
       }
