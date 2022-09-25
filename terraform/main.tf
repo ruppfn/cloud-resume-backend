@@ -1,8 +1,9 @@
 locals {
-  region      = "us-east-2"
-  account_id  = data.aws_caller_identity.current.account_id
-  build_path  = "../build"
-  domain_name = "api.${var.environment == "develop" ? "dev." : ""}frupp.com.ar"
+  region           = "us-east-2"
+  account_id       = data.aws_caller_identity.current.account_id
+  build_path       = "../build"
+  base_domain_name = "${var.environment == "develop" ? "dev." : ""}frupp.com.ar"
+  domain_name      = "api.${local.base_domain_name}"
 }
 
 terraform {

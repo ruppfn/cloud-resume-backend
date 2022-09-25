@@ -57,3 +57,15 @@ resource "aws_apigatewayv2_api_mapping" "mapping" {
   domain_name = aws_apigatewayv2_domain_name.domain_name.id
   stage       = aws_apigatewayv2_stage.default.id
 }
+
+resource "aws_route53_record" "web_record" {
+  name    = local.web_domain_name
+  type    = "A"
+  zone_id = var.zone_id
+
+  alias {
+    evaluate_target_health = false
+    name                   = aws_cloudfront_distribution.page_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.page_distribution.hosted_zone_id
+  }
+}
