@@ -61,3 +61,12 @@ resource "aws_iam_role" "lambda_role" {
   name               = "${var.environment}-lambda-role"
   assume_role_policy = data.aws_iam_policy_document.lambda_assume_role.json
 }
+
+resource "aws_lambda_permission" "api_gw" {
+  statement_id  = "AllowExecutionFromAPIGateway"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.cv_lambda.function_name
+  principal     = "apigateway.amazonaws.com"
+
+  source_arn = "${aws_apigatewayv2_api.http-api.execution_arn}/*/*"
+}
