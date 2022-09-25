@@ -25,8 +25,8 @@ data "aws_iam_policy_document" "lambda-dynamodb" {
   policy_id = "${var.environment}-lambda-dynamodb"
   version   = "2012-10-17"
   statement {
-    effect    = "Allow"
-    actions   = ["dynamodb:GetItem"]
+    effect  = "Allow"
+    actions = ["dynamodb:GetItem"]
     resources = [
       "arn:aws:dynamodb:${local.region}:${local.account_id}:table/${aws_dynamodb_table.dynamo_table.name}"
     ]
