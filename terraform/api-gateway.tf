@@ -13,7 +13,7 @@ resource "aws_apigatewayv2_integration" "cv_lambda_integration" {
 
 resource "aws_apigatewayv2_route" "get" {
   api_id    = aws_apigatewayv2_api.http-api.id
-  route_key = "GET /"
+  route_key = "GET /cv"
   target    = "integrations/${aws_apigatewayv2_integration.cv_lambda_integration.id}"
 }
 
