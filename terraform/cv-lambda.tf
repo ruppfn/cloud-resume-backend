@@ -16,9 +16,11 @@ resource "aws_lambda_function" "cv_lambda" {
   timeout          = 30
 
   environment {
-    REGION     = local.region
-    TABLE_NAME = aws_dynamodb_table.dynamo_table.name
-    KEY        = aws_dynamodb_table.dynamo_table.hash_key
-    VALUE      = "cv"
+    variables = {
+      REGION     = local.region
+      TABLE_NAME = aws_dynamodb_table.dynamo_table.name
+      KEY        = aws_dynamodb_table.dynamo_table.hash_key
+      VALUE      = "cv"
+    }
   }
 }
