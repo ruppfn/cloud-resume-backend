@@ -56,4 +56,5 @@ resource "aws_cloudfront_distribution" "page_distribution" {
     response_page_path    = "/index.html"
   }
 
+  depends_on = [aws_acm_certificate_validation.cloudfront_validation]
 }
