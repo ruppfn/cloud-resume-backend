@@ -33,6 +33,7 @@ type Skills struct {
 	ProgrammingLanguages []IndividualSkill `json:"programmingLanguages"`
 	Frameworks           []IndividualSkill `json:"frameworks"`
 	Databases            []IndividualSkill `json:"databases"`
+	Languages            []IndividualSkill `json:"languages"`
 }
 
 type IndividualSkill struct {
