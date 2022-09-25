@@ -14,4 +14,11 @@ resource "aws_lambda_function" "cv_lambda" {
   architectures    = ["arm64"]
   memory_size      = 128
   timeout          = 30
+
+  environment {
+    REGION     = local.region
+    TABLE_NAME = aws_dynamodb_table.dynamo_table.name
+    KEY        = aws_dynamodb_table.dynamo_table.hash_key
+    VALUE      = "cv"
+  }
 }
