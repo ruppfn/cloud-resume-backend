@@ -25,6 +25,7 @@ type Experience struct {
 	ToDate       string   `json:"toDate"`
 	TechStack    []string `json:"techStack"`
 	Achievements []string `json:"achievements"`
+	Id           int      `json:"id"`
 }
 
 type Skills struct {
