@@ -30,11 +30,8 @@ resource "aws_cloudfront_distribution" "page_distribution" {
     domain_name = aws_s3_bucket_website_configuration.page_configuration.website_endpoint
     origin_id   = "S3-${aws_s3_bucket.page_bucket.bucket}"
 
-    custom_origin_config {
-      http_port              = 80
-      https_port             = 443
-      origin_protocol_policy = "https-only"
-      origin_ssl_protocols   = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    s3_origin_config {
+      origin_access_identity = aws_cloudfront_origin_access_identity.web_oai.cloudfront_access_identity_path
     }
   }
   restrictions {
@@ -57,4 +54,8 @@ resource "aws_cloudfront_distribution" "page_distribution" {
   }
 
   depends_on = [aws_acm_certificate_validation.cloudfront_validation]
+}
+
+resource "aws_cloudfront_origin_access_identity" "web_oai" {
+  comment = "OAI for ${local.web_domain_name}"
 }
