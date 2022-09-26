@@ -12,7 +12,7 @@ resource "aws_cloudfront_distribution" "page_distribution" {
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "S3-${aws_s3_bucket.page_bucket.bucket}"
+    target_origin_id = aws_s3_bucket.page_bucket.id
     # Forward all query strings, cookies and headers
     forwarded_values {
       query_string = true
