@@ -488,6 +488,19 @@
             "S": "https://www.credly.com/badges/9fb23f02-2b44-41a6-903b-1912f71167eb"
           }
         }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "HashiCorp Certified: Terraform Associate"
+          },
+          "dateObtained": {
+            "S": "October 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/4df63de4-eb8b-4d25-bdbd-52740f156b86"
+          }
+        }
       }
     ]
   }
