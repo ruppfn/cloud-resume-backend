@@ -1,0 +1,60 @@
+name: Deploy Production
+
+defaults:
+  run:
+    working-directory: ./terraform
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AWS_REGION: us-east-2
+  TF_VAR_zone_id: ${{ secrets.PROD_ROUTE_53_ZONE_ID }}
+
+permissions:
+  id-token: write
+
+jobs:
+  lint:
+    name: Deploy Develop
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.PROD_AWS_ACCOUNT_ID }}:role/CICD-Role
+          role-session-name: ci-cd-session
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Init
+        run: terraform init -backend-config=develop.backend.config.tfvars
+
+      - name: Validate
+        run: terraform validate -no-color
+
+      - name: Check Format
+        run: terraform fmt -check
+
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Build lambdas
+        run: make all
+        working-directory: ./
+
+      - name: Apply
+        run: terraform apply -auto-approve
