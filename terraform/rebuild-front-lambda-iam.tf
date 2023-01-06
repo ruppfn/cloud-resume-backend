@@ -58,3 +58,28 @@ resource "aws_iam_role_policy_attachment" "rebuild_lambda_stream_attachment" {
   policy_arn = aws_iam_policy.allow_read_dynamo_stream.arn
   role       = aws_iam_role.rebuild_lambda_role.name
 }
+
+data "aws_iam_policy_document" "allow_ssm" {
+  policy_id = "${var.environment}-lambda-ssm"
+  version   = "2012-10-17"
+  statement {
+    effect = "Allow"
+    actions = [
+      "ssm:GetParameter"
+    ]
+    resources = [
+      aws_ssm_parameter.github_pat.arn,
+      "${aws_ssm_parameter.github_pat.arn}/*",
+    ]
+  }
+}
+
+resource "aws_iam_policy" "allow_ssm_policy" {
+  name   = "${var.environment}-allow-ssm"
+  policy = data.aws_iam_policy_document.allow_ssm.json
+}
+
+resource "aws_iam_role_policy_attachment" "rebuild_lambda_ssm_attachment" {
+  policy_arn = aws_iam_policy.allow_ssm_policy.arn
+  role       = aws_iam_role.rebuild_lambda_role.name
+}
