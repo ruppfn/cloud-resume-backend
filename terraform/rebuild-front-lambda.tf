@@ -13,7 +13,7 @@ resource "aws_lambda_function" "rebuild_front_lambda" {
   runtime          = "provided.al2"
   architectures    = ["arm64"]
   memory_size      = 128
-  timeout          = 30
+  timeout          = 5 * 60
 
   environment {
     variables = {
