@@ -9,7 +9,7 @@ resource "aws_lambda_function" "cv_lambda" {
   function_name    = "cv-lambda"
   role             = aws_iam_role.lambda_role.arn
   handler          = "cv-lambda"
-  source_code_hash = filebase64sha256(data.archive_file.cv_lambda_zip.output_path)
+  source_code_hash = data.archive_file.cv_lambda_zip.output_base64sha256
   runtime          = "provided.al2"
   architectures    = ["arm64"]
   memory_size      = 128

@@ -9,7 +9,7 @@ resource "aws_lambda_function" "rebuild_front_lambda" {
   function_name    = "rebuild-front-lambda"
   role             = aws_iam_role.rebuild_lambda_role.arn
   handler          = "rebuild-front-lambda"
-  source_code_hash = filebase64sha256(data.archive_file.rebuild_front_lambda_zip.output_path)
+  source_code_hash = data.archive_file.rebuild_front_lambda_zip.output_base64sha256
   runtime          = "provided.al2"
   architectures    = ["arm64"]
   memory_size      = 128
