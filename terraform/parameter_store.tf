@@ -3,4 +3,10 @@ resource "aws_ssm_parameter" "github_pat" {
   type      = "SecureString"
   value     = "This is the real value... Trust me, im a dolphin"
   overwrite = false
+
+  lifecycle {
+    ignore_changes = [
+      value,
+    ]
+  }
 }
