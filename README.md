@@ -46,7 +46,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-My version of [Cloud Resume Challenge](https://cloudresumechallenge.dev/) that I did to practice for the Terraform certification.
+My version of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) that I did to practice for the Terraform certification.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
