@@ -33,7 +33,7 @@ resource "aws_iam_role_policy_attachment" "rebuild_lambda_invalidation_attachmen
 
 data "aws_iam_policy_document" "allow_dynamo_stream" {
   policy_id = "${var.environment}-lambda-dynamo-stream"
-  version = "2012-10-17"
+  version   = "2012-10-17"
   statement {
     effect = "Allow"
     actions = [
@@ -49,7 +49,7 @@ data "aws_iam_policy_document" "allow_dynamo_stream" {
 }
 
 resource "aws_iam_policy" "allow_read_dynamo_stream" {
-  name = "${var.environment}-allow-dynamo-stream"
+  name   = "${var.environment}-allow-dynamo-stream"
   policy = data.aws_iam_policy_document.allow_dynamo_stream.json
 }
 
