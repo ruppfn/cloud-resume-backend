@@ -6,9 +6,9 @@ data "archive_file" "rebuild_front_lambda_zip" {
 
 resource "aws_lambda_function" "rebuild_front_lambda" {
   filename         = data.archive_file.rebuild_front_lambda_zip.output_path
-  function_name    = "cv-lambda"
+  function_name    = "rebuild-front-lambda"
   role             = aws_iam_role.lambda_role.arn
-  handler          = "cv-lambda"
+  handler          = "rebuild-front-lambda"
   source_code_hash = filebase64sha256(data.archive_file.rebuild_front_lambda_zip.output_path)
   runtime          = "provided.al2"
   architectures    = ["arm64"]
