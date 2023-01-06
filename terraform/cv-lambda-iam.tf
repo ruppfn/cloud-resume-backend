@@ -6,7 +6,7 @@ data "aws_iam_policy_document" "lambda-logs" {
     actions = ["logs:CreateLogStream", "logs:PutLogEvents", "logs:CreateLogGroup"]
 
     resources = [
-      "arn:aws:logs:${local.region}:${local.account_id}:log-group:/aws/lambda/${var.environment}*:*"
+      "arn:aws:logs:${local.region}:${local.account_id}:log-group:/aws/lambda/*:*"
     ]
   }
 }
