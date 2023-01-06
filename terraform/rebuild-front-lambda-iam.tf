@@ -43,8 +43,8 @@ data "aws_iam_policy_document" "allow_dynamo_stream" {
       "dynamodb:ListStreams"
     ]
     resources = [
-      aws_dynamodb_table.dynamo_table.arn,
-      aws_dynamodb_table.dynamo_table.stream_arn,
+      "arn:aws:dynamodb:${local.region}:${local.account_id}:table/${aws_dynamodb_table.dynamo_table.name}",
+      "arn:aws:dynamodb:${local.region}:${local.account_id}:table/${aws_dynamodb_table.dynamo_table.name}/*",
     ]
   }
 }
