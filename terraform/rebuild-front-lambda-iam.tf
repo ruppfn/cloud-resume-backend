@@ -23,7 +23,7 @@ data "aws_iam_policy_document" "allow_invalidation_document" {
 
 resource "aws_iam_policy" "allow_invalidation" {
   name   = "${var.environment}-cloudfront-lambda"
-  policy = data.aws_iam_policy_document.allow_invalidation_document
+  policy = data.aws_iam_policy_document.allow_invalidation_document.json
 }
 
 resource "aws_iam_role_policy_attachment" "rebuild_lambda_invalidation_attachment" {
