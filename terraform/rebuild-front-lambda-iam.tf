@@ -44,7 +44,7 @@ data "aws_iam_policy_document" "allow_dynamo_stream" {
     ]
     resources = [
       aws_dynamodb_table.dynamo_table.arn,
-      "${aws_dynamodb_table.dynamo_table.stream_arn}/*",
+      "${aws_dynamodb_table.dynamo_table.arn}/stream/*",
     ]
   }
 }
