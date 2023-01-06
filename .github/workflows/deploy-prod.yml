@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   lint:
-    name: Deploy Develop
+    name: Deploy Production
     runs-on: ubuntu-latest
     steps:
       - name: Setup Terraform
