@@ -28,3 +28,6 @@ terraform.rc
 
 # JetBrains IDEs
 .idea/
+
+# Compiled Code
+build/

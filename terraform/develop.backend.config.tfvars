@@ -1,1 +1,1 @@
-key = "develop/terraform.tfstate"
+bucket = "develop-ruppfn-terraform"
