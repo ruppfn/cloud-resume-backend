@@ -4,6 +4,8 @@ resource "aws_dynamodb_table" "dynamo_table" {
   read_capacity  = 5
   write_capacity = 5
 
+  stream_enabled = true
+
   hash_key = "id"
 
   attribute {

@@ -24,3 +24,9 @@ resource "aws_lambda_function" "rebuild_front_lambda" {
     }
   }
 }
+
+resource "aws_lambda_event_source_mapping" "dynamo_event_source" {
+  event_source_arn  = aws_dynamodb_table.dynamo_table.stream_arn
+  function_name     = aws_lambda_function.rebuild_front_lambda.arn
+  starting_position = "LATEST"
+}

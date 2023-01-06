@@ -30,3 +30,30 @@ resource "aws_iam_role_policy_attachment" "rebuild_lambda_invalidation_attachmen
   policy_arn = aws_iam_policy.allow_invalidation.arn
   role       = aws_iam_role.rebuild_lambda_role.name
 }
+
+data "aws_iam_policy_document" "allow_dynamo_stream" {
+  policy_id = "${var.environment}-lambda-dynamo-stream"
+  version = "20127-10-17"
+  statement {
+    effect = "Allow"
+    actions = [
+      "dynamodb:GetRecords",
+      "dynamodb:GetShardIterator",
+      "dynamodb:DescribeStream",
+      "dynamodb:ListStreams"
+    ]
+    resources = [
+      aws_dynamodb_table.dynamo_table.stream_arn
+    ]
+  }
+}
+
+resource "aws_iam_policy" "allow_read_dynamo_stream" {
+  name = "${var.environment}-allow-dynamo-stream"
+  policy = data.aws_iam_policy_document.allow_dynamo_stream.json
+}
+
+resource "aws_iam_role_policy_attachment" "rebuild_lambda_stream_attachment" {
+  policy_arn = aws_iam_policy.allow_read_dynamo_stream.arn
+  role       = aws_iam_role.rebuild_lambda_role.name
+}
