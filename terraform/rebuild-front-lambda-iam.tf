@@ -83,3 +83,27 @@ resource "aws_iam_role_policy_attachment" "rebuild_lambda_ssm_attachment" {
   policy_arn = aws_iam_policy.allow_ssm_policy.arn
   role       = aws_iam_role.rebuild_lambda_role.name
 }
+
+data "aws_iam_policy_document" "allow_ssm_decrypt" {
+  policy_id = "${var.environment}-lambda-ssm-decrypt"
+  version   = "2012-10-17"
+  statement {
+    effect = "Allow"
+    actions = [
+      "kms:Decrypt"
+    ]
+    resources = [
+      "arn:aws:kms:${local.region}:${local.account_id}:${aws_ssm_parameter.github_pat.key_id}"
+    ]
+  }
+}
+
+resource "aws_iam_policy" "allow_ssm_decrypt_policy" {
+  name   = "${var.environment}-allow-ssm-decrypt"
+  policy = data.aws_iam_policy_document.allow_ssm_decrypt.json
+}
+
+resource "aws_iam_role_policy_attachment" "rebuild_lambda_ssm_decrypt_attachment" {
+  policy_arn = aws_iam_policy.allow_ssm_decrypt_policy.arn
+  role       = aws_iam_role.rebuild_lambda_role.name
+}
