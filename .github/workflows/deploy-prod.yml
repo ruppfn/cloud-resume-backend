@@ -12,13 +12,14 @@ on:
 env:
   AWS_REGION: us-east-2
   TF_VAR_zone_id: ${{ secrets.PROD_ROUTE_53_ZONE_ID }}
+  TF_VAR_environment: production
 
 permissions:
   id-token: write
 
 jobs:
   lint:
-    name: Deploy Develop
+    name: Deploy Production
     runs-on: ubuntu-latest
     steps:
       - name: Setup Terraform
