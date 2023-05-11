@@ -28,7 +28,7 @@
     }
   },
   "aboutMe": {
-    "S": "Self-taught Backend Developer with +3 years of experience designing, developing and maintaining web services (SOAP & REST) using mostly Java, Python, and Node. I also have strong knowledge of DevOps technologies such as AWS, Terraform, Terragrunt, and CI/CD Pipelines in GitHub Actions. I love learning new technologies, patterns, and everything that can make me a better professional."
+    "S": "Self-taught Backend Developer with +3 years of experience designing, developing and maintaining web services (gRPC, SOAP, & REST) using mostly Java, Python, and Node. I also have strong knowledge of DevOps technologies such as AWS, Terraform, Terragrunt, and CI/CD Pipelines in GitHub Actions. I love learning new technologies, patterns, and everything that can make me a better professional."
   },
   "experience": {
     "L": [
@@ -241,6 +241,12 @@
                 "S": "gRPC"
               },
               {
+                "S": "New Relic"
+              },
+              {
+                "S": "Sentry"
+              },
+              {
                 "S": "SQL Server"
               },
               {
@@ -254,7 +260,16 @@
           "achievements": {
             "L": [
               {
-                "S": "Helped the Performance Team optimize the database indexes and queries"
+                "S": "Migrated a core SDK from a static data model to a server-based architecture while maintaining synchronous data access"
+              },
+              {
+                "S": "Developed and implemented an error handling and debugging strategy using Sentry, resulting in significant improvements in developer experience"
+              },
+              {
+                "S": "Rapidly prototyped and launched new product features to meet potential customers needs"
+              },
+              {
+                "S": "Optimized SQL Server database performance by rewriting complex queries and implementing strategic indexing"
               }
             ]
           }
@@ -437,39 +452,26 @@
       {
         "M": {
           "name": {
-            "S": "AWS Certified Cloud Practitioner"
+            "S": "AWS Certified Database – Specialty"
           },
           "dateObtained": {
-            "S": "January 2022"
+            "S": "March 2023"
           },
           "url": {
-            "S": "https://www.credly.com/badges/a2ba977d-d51c-4600-9745-f542f2a35a77"
+            "S": "https://www.credly.com/badges/bf8487fb-e59e-4209-9787-5a8cd153d69b"
           }
         }
       },
       {
         "M": {
           "name": {
-            "S": "AWS Certified Solutions Architect Associate"
+            "S": "HashiCorp Certified: Terraform Associate"
           },
           "dateObtained": {
-            "S": "February 2022"
+            "S": "October 2022"
           },
           "url": {
-            "S": "https://www.credly.com/badges/ea479eb2-5a38-44d6-8604-0fb91f1ca00d"
-          }
-        }
-      },
-      {
-        "M": {
-          "name": {
-            "S": "AWS Certified Developer Associate"
-          },
-          "dateObtained": {
-            "S": "February 2022"
-          },
-          "url": {
-            "S": "https://www.credly.com/badges/2c348a0a-3c09-4a18-86c8-1ec103a15307"
+            "S": "https://www.credly.com/badges/4df63de4-eb8b-4d25-bdbd-52740f156b86"
           }
         }
       },
@@ -489,13 +491,39 @@
       {
         "M": {
           "name": {
-            "S": "HashiCorp Certified: Terraform Associate"
+            "S": "AWS Certified Developer Associate"
           },
           "dateObtained": {
-            "S": "October 2022"
+            "S": "February 2022"
           },
           "url": {
-            "S": "https://www.credly.com/badges/4df63de4-eb8b-4d25-bdbd-52740f156b86"
+            "S": "https://www.credly.com/badges/2c348a0a-3c09-4a18-86c8-1ec103a15307"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Solutions Architect Associate"
+          },
+          "dateObtained": {
+            "S": "February 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/ea479eb2-5a38-44d6-8604-0fb91f1ca00d"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Cloud Practitioner"
+          },
+          "dateObtained": {
+            "S": "January 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/a2ba977d-d51c-4600-9745-f542f2a35a77"
           }
         }
       }
