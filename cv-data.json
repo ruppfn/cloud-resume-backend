@@ -452,52 +452,13 @@
       {
         "M": {
           "name": {
-            "S": "AWS Certified Cloud Practitioner"
+            "S": "AWS Certified Database – Specialty"
           },
           "dateObtained": {
-            "S": "January 2022"
+            "S": "March 2023"
           },
           "url": {
-            "S": "https://www.credly.com/badges/a2ba977d-d51c-4600-9745-f542f2a35a77"
-          }
-        }
-      },
-      {
-        "M": {
-          "name": {
-            "S": "AWS Certified Solutions Architect Associate"
-          },
-          "dateObtained": {
-            "S": "February 2022"
-          },
-          "url": {
-            "S": "https://www.credly.com/badges/ea479eb2-5a38-44d6-8604-0fb91f1ca00d"
-          }
-        }
-      },
-      {
-        "M": {
-          "name": {
-            "S": "AWS Certified Developer Associate"
-          },
-          "dateObtained": {
-            "S": "February 2022"
-          },
-          "url": {
-            "S": "https://www.credly.com/badges/2c348a0a-3c09-4a18-86c8-1ec103a15307"
-          }
-        }
-      },
-      {
-        "M": {
-          "name": {
-            "S": "AWS Certified SysOps Administrator Associate"
-          },
-          "dateObtained": {
-            "S": "August 2022"
-          },
-          "url": {
-            "S": "https://www.credly.com/badges/9fb23f02-2b44-41a6-903b-1912f71167eb"
+            "S": "https://www.credly.com/badges/bf8487fb-e59e-4209-9787-5a8cd153d69b"
           }
         }
       },
@@ -517,13 +478,52 @@
       {
         "M": {
           "name": {
-            "S": "AWS Certified Database – Specialty"
+            "S": "AWS Certified SysOps Administrator Associate"
           },
           "dateObtained": {
-            "S": "March 2023"
+            "S": "August 2022"
           },
           "url": {
-            "S": "https://www.credly.com/badges/bf8487fb-e59e-4209-9787-5a8cd153d69b"
+            "S": "https://www.credly.com/badges/9fb23f02-2b44-41a6-903b-1912f71167eb"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Developer Associate"
+          },
+          "dateObtained": {
+            "S": "February 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/2c348a0a-3c09-4a18-86c8-1ec103a15307"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Solutions Architect Associate"
+          },
+          "dateObtained": {
+            "S": "February 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/ea479eb2-5a38-44d6-8604-0fb91f1ca00d"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Cloud Practitioner"
+          },
+          "dateObtained": {
+            "S": "January 2022"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/a2ba977d-d51c-4600-9745-f542f2a35a77"
           }
         }
       }
