@@ -513,6 +513,19 @@
             "S": "https://www.credly.com/badges/4df63de4-eb8b-4d25-bdbd-52740f156b86"
           }
         }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "AWS Certified Database – Specialty"
+          },
+          "dateObtained": {
+            "S": "March 2023"
+          },
+          "url": {
+            "S": "https://www.credly.com/badges/bf8487fb-e59e-4209-9787-5a8cd153d69b"
+          }
+        }
       }
     ]
   }
