@@ -28,7 +28,7 @@
     }
   },
   "aboutMe": {
-    "S": "Self-taught Backend Developer with +3 years of experience designing, developing and maintaining web services (gRPC, SOAP, & REST) using mostly Java, Python, and Node. I also have strong knowledge of DevOps technologies such as AWS, Terraform, Terragrunt, and CI/CD Pipelines in GitHub Actions. I love learning new technologies, patterns, and everything that can make me a better professional."
+    "S": "Backend Developer with +4 years of experience designing, developing and maintaining web services (gRPC, SOAP, & REST) using mostly Java, Python, and Node. I also have strong knowledge of DevOps technologies such as AWS, Terraform, Terragrunt, and CI/CD Pipelines in GitHub Actions. I love learning new technologies, patterns, and everything that can make me a better professional."
   },
   "experience": {
     "L": [
@@ -250,15 +250,30 @@
                 "S": "SQL Server"
               },
               {
+                "S": "PostgreSQL"
+              },
+              {
                 "S": "DocumentDB"
               },
               {
+                "S": "MongoDB"
+              },
+              {
                 "S": "AWS"
+              },
+              {
+                "S": "NestJS"
+              },
+              {
+                "S": "Apache Pulsar"
               }
             ]
           },
           "achievements": {
             "L": [
+              {
+                "S": "Designed and developed event-driven microservices using Apache Pulsar"
+              },
               {
                 "S": "Migrated a core SDK from a static data model to a server-based architecture while maintaining synchronous data access"
               },
@@ -269,7 +284,7 @@
                 "S": "Rapidly prototyped and launched new product features to meet potential customers needs"
               },
               {
-                "S": "Optimized SQL Server database performance by rewriting complex queries and implementing strategic indexing"
+                "S": "Optimized SQL Server and PostgreSQL database performance by rewriting complex queries and implementing strategic indexing"
               }
             ]
           }
@@ -348,6 +363,16 @@
           {
             "M": {
               "name": {
+                "S": "NestJS"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
                 "S": "Flask"
               },
               "level": {
@@ -373,6 +398,16 @@
             "M": {
               "name": {
                 "S": "SQL Server"
+              },
+              "level": {
+                "S": "Advanced"
+              }
+            }
+          },
+          {
+            "M": {
+              "name": {
+                "S": "PostgreSQL"
               },
               "level": {
                 "S": "Advanced"
